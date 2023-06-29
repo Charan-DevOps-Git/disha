@@ -1,0 +1,99 @@
+form E2 user to root user ->  sudo -i
+
+to clear console -> clear
+
+to install git -> yum install git -y
+
+after install -> ll (total willbe 0 since we haven't created any files)
+
+to view all hidden files -> ls -al
+
+for creating empty repository -> git init .
+
+after creating empty repo -> ls -al (shows the files .git)
+
+to create a new file -> touch <filename> ex: touch f1 (enter)
+next give -> cat><filename> ex: cat>f1 (enter)
+next give -> <description> ex: This is file1 (enter)
+Now press ctrl+d to come out of desc to console
+
+to get status of the file -> git status (will show the files which are untracked "red in colour")
+
+to copy files from untracked to staging  -> git add <filename> ex: git add f1
+
+to commit file -> git commit -m "<message>" <filename>  ex: git commit -m "My First Git Commit" f1
+
+to view the commited message -> git log
+
+
+to configure/create a user -> git config user.name "<username>"   ex: git config user.name "charan"
+
+to configure/create email -> git config user.email "<emailid>"   ex : git config user.email "charan@gmail.com"
+
+
+to convert files from untracked to tracked(multiple at a time) -> git add .
+to convert files from tracked to untracked(multiple at a time) -> git restore --staged .<filename>
+
+to igonore files -> vi .gitignore , type "i" to convert it into insert mode.
+give name of the file and * at the end - to come out of it use ":wq" and click enter.
+
+******** GIT Branches *********
+
+to get current branch -> git branch
+
+to remove files from branch -> rm -rf *
+
+to create new branch -> git branch <Branch Name> ex: git branch TestBranch
+
+to switch to the created branch from master -> git checkout <Branch Name>   ex: git checkout TestBranch
+
+to restore files deleted -> git restore <filename>* ex: git restore charan* (give * for all files restoration)
+
+to rename a branch -> git branch -m <old branch name> <new branch name>  ex: git branch -m shashi disha
+
+to delete a branch -> git branch -d <branch name>  ( we cannot delete current branch directly when selected)
+have to switch to other branch and delete the required branch
+to forcefully delete branch use "-D" in the command
+
+
+My Git Repository Origin URL : git remote add origin https://github.com/Charan-DevOps-Git/disha
+
+
+***********
+
+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
+
+
+*********
+
+to create now branch and switch to it -> git checkout -b <branch name>
+
+to merge files from 2 branches -> git merge <branchname>
+
+****************
+
+Git Cloning
+
+git clone https://github.com/Charan-DevOps-Git/disha.git
+
+git pull origin ritu
+
+
+********************
+
+maven build cycle
+
+compile code - mvn compile
+test - mvn test
+package - mvn package
+install - mvn install
+
+
+
+
+
+
+
+
+
+
